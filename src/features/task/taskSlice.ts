@@ -20,6 +20,8 @@ export const taskSlice = createSlice({
   initialState,
   reducers: {
     addTask: (state, action) => {
+      console.log("test");
+
       state.idCount++;
       const newTask = {
         id: state.idCount,
